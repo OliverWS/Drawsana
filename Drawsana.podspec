@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.documentation_url = 'https://asana.github.io/Drawsana'
   spec.authors      = { 'Steve Landey' => 'stevelandey@asana.com' }
   spec.summary      = 'Let your users mark up images with freehand drawings, shapes, and text'
-  spec.source       = { :git => 'https://github.com/asana/Drawsana.git', :tag => '0.10.0' }
+  spec.source       = { :git => 'https://github.com/OliverWS/Drawsana.git', :tag => '0.10.0' }
   spec.source_files = 'Drawsana/**/*.swift'
 
   spec.platform 	= :ios, '9.0'
