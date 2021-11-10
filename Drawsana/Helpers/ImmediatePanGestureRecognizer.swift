@@ -86,6 +86,9 @@ class ImmediatePanGestureRecognizer: UIGestureRecognizer {
   }
 
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
+   // In the event of certain multi-touch events such as laying a whole hand on the iPad the below can cause a gesture to never end
+   // because the original touch appeared only a single time. 
+   /*
     guard
       state == .began || state == .changed,
       let trackedTouch = trackedTouch,
@@ -93,7 +96,7 @@ class ImmediatePanGestureRecognizer: UIGestureRecognizer {
     {
       return
     }
-
+    */
     state = .ended
 
     DispatchQueue.main.async {
